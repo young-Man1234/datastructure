@@ -16,7 +16,7 @@ public class Node {
     }
 
     public void setNext(Node nd){
-        this.next = next;
+        this.next = nd;
     }
 
     public int getData(){
