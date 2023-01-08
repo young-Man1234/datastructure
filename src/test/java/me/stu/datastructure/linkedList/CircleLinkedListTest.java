@@ -28,6 +28,7 @@ class CircleLinkedListTest {
         System.out.println("=== 원형 리스트 remove ===");
         list.removeData(2);
         list.removeData(4);
+        list.removeData(1);
         list.showAllData();
         System.out.println("========================");
 

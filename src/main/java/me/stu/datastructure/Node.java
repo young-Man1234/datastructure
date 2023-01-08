@@ -4,6 +4,8 @@ public class Node {
     private Node next;
     private int data;
 
+    private Node prev;
+
     public Node(){
         this.next = null;
     }
@@ -19,10 +21,18 @@ public class Node {
         this.next = nd;
     }
 
+    public void setPrev(Node nd){
+        this.prev = nd;
+    }
+
     public int getData(){
         return this.data;
     }
     public Node getNext(){
         return this.next;
+    }
+
+    public Node getPrev() {
+        return this.prev;
     }
 }
