@@ -10,7 +10,7 @@ class ArrBaseStackTest {
 
     @BeforeEach
     void init(){
-        stack = new ArrBaseStack();
+        stack = new ArrBaseStack(4);
     }
 
     @Test
