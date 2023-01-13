@@ -1,6 +1,6 @@
 package me.stu.datastructure.linkedList;
 
-import me.stu.datastructure.Node;
+import me.stu.datastructure.node.Node;
 
 public interface HmLinkedList {
 

@@ -1,6 +1,6 @@
 package me.stu.datastructure.btree;
 
-import me.stu.datastructure.BtreeNode;
+import me.stu.datastructure.node.BtreeNode;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;

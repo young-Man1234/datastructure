@@ -1,9 +1,8 @@
 package me.stu.datastructure.btree;
 
-import me.stu.datastructure.BtreeNode;
+import me.stu.datastructure.node.BtreeNode;
 
 public class Btree {
-
     public BtreeNode getLeftSubTree(BtreeNode main){
         return main.getLeft();
     }

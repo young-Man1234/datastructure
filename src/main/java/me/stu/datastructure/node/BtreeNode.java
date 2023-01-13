@@ -1,4 +1,4 @@
-package me.stu.datastructure;
+package me.stu.datastructure.node;
 
 public class BtreeNode {
     private int data;

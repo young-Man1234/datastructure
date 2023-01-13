@@ -1,6 +1,6 @@
 package me.stu.datastructure.queue;
 
-import me.stu.datastructure.Node;
+import me.stu.datastructure.node.Node;
 
 public class LinkedListBaseQueue implements HmQueue{
     private Node front;
