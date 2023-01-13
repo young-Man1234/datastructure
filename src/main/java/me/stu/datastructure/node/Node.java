@@ -1,10 +1,12 @@
-package me.stu.datastructure;
+package me.stu.datastructure.node;
 
 public class Node {
     private Node next;
     private int data;
-
     private Node prev;
+
+    private Node left;
+    private Node right;
 
     public Node(){
         this.next = null;

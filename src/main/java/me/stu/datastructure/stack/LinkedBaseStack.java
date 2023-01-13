@@ -1,10 +1,9 @@
 package me.stu.datastructure.stack;
 
-import me.stu.datastructure.Node;
+import me.stu.datastructure.node.Node;
 
 public class LinkedBaseStack implements HmStack{
     private Node head;
-
 
     public LinkedBaseStack(){
         head = null;
