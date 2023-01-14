@@ -12,7 +12,7 @@ public class Heap implements Comparator<String> {
     private int numOfdata;
 
     public Heap(int heapSize) {
-        this.heapArr = new HeapElem[heapSize];
+        this.heapArr = new HeapElem[heapSize + 1];
         this.numOfdata = 0;
     }
 
@@ -53,6 +53,7 @@ public class Heap implements Comparator<String> {
         numOfdata--;
         return delElem;
     }
+
 
     private int getHighPriorityChildIDX(int pIdx){
         if(getLeftIDX(pIdx) > numOfdata)
