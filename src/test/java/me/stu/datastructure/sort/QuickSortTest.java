@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class QuickSortTest {
-
     @Test
     void qSort(){
         int[] data = {2, 4, 7, 8, 1};
@@ -15,7 +14,6 @@ class QuickSortTest {
         for(int i = 0; i < data.length; i++){
             assertEquals(expectRes[i], data[i]);
         }
-
     }
 
 }
