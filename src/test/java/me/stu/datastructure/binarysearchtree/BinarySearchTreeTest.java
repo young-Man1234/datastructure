@@ -22,7 +22,12 @@ class BinarySearchTreeTest {
         bst.insertNodeData(4);
         bst.insertNodeData(2);
         bst.insertNodeData(5);
+        bst.insertNodeData(3);
+        bst.insertNodeData(6);
 
+
+        bst.removeNode(2);
+        bst.removeNode(5);
         bst.getNodeData();
 
     }
