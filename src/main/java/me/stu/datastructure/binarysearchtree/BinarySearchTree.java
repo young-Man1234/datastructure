@@ -1,5 +1,6 @@
 package me.stu.datastructure.binarysearchtree;
 
+import me.stu.datastructure.avlrebalance.AVLRebalance;
 import me.stu.datastructure.btree.Btree;
 import me.stu.datastructure.node.BtreeNode;
 
@@ -9,15 +10,41 @@ public class BinarySearchTree {
     BtreeNode root;
     Btree btree;
 
+    AVLRebalance rebalance;
+
+
     public BinarySearchTree(){
         this.btree = new Btree();
+        this.rebalance = new AVLRebalance();
     }
 
-    //해당 Node의 데이터를 반환
+    public Btree getBtree() {
+        return btree;
+    }
+
+    public BtreeNode getRoot() {
+        return root;
+    }
+
+    //전위 순회로 데이터 출력
     public void getNodeData(){
         btree.preOrderTraverse(root);
     }
 
+    public void insertRebalanceNode(BtreeNode pRoot, int data){
+        if(pRoot == null){
+            pRoot = new BtreeNode(data);
+        }else if(data < pRoot.getData()){
+            insertRebalanceNode(pRoot.getLeft(), data);
+            pRoot = rebalance.rebalance(pRoot);
+        }else if(data > pRoot.getData()){
+            insertRebalanceNode(pRoot.getRight(), data);
+            pRoot = rebalance.rebalance(pRoot);
+        }else{
+            throw new RuntimeException("중복된 값입니다.");
+        }
+        root = pRoot;
+    }
     //이진 탐색 트리에 Node를 저장
     public void insertNodeData(int newData){
         //새로운 노드의 부모노드

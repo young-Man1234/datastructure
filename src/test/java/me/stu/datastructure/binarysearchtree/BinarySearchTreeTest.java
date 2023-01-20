@@ -12,8 +12,7 @@ class BinarySearchTreeTest {
     @BeforeEach
     void init(){
         bst = new BinarySearchTree();
-
-
+        
 
     }
 
@@ -24,7 +23,6 @@ class BinarySearchTreeTest {
         bst.insertNodeData(5);
         bst.insertNodeData(3);
         bst.insertNodeData(6);
-
 
         bst.removeNode(2);
         bst.removeNode(5);
