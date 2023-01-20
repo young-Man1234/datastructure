@@ -47,6 +47,32 @@ public class Btree {
         action(main);
     }
 
+    public void changeLeftSubTree(BtreeNode main, BtreeNode sub){
+        main.setLeft(sub);
+    }
+
+    public void changeRightSubTree(BtreeNode main, BtreeNode sub){
+        main.setRight(sub);
+    }
+
+    public BtreeNode removeLeftSubTree(BtreeNode main){
+        BtreeNode delNode = null;
+        if(main != null){
+            delNode = main.getLeft();
+            main.setLeft(null);
+        }
+        return delNode;
+    }
+
+    public BtreeNode removeRightSubTree(BtreeNode main){
+        BtreeNode delNode = null;
+        if(main != null){
+            delNode = main.getRight();
+            main.setRight(null);
+        }
+        return delNode;
+    }
+
     /*
         현재는 단순히 데이터를 출력하는 로직
         원하는 로직으로 바꿔주면 됨
